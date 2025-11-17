@@ -7,18 +7,394 @@
 </head>
 <body>
     <style>
-        body{
-            min-height: 800px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    /* GENERAL */
 
-        div{
-            font-size: 90px;
-            font-style: italic;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020817;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#top-bar {
+    background-color: #04142c;
+    padding: 10px 20px;
+    border-bottom: 1px solid #1b9dff;
+}
+
+#logo {
+    float: left;
+}
+
+.logo-main {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.logo-blue {
+    
+    color: #1b9dff;
+    font-size: 20px;
+}
+
+/* NAV LINKS */
+
+#main-nav {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 4px;
+}
+
+#main-nav a {
+  
+    color: #9bb4ff;
+    margin-right: 18px;
+    font-size: 13px;
+}
+
+#main-nav a:hover {
+    color: #36c3ff;
+    border-bottom: 2px solid #36c3ff;
+}
+
+/* SEARCH + BUTTONS */
+
+#nav-actions {
+    float: right;
+    padding-top: 2px;
+}
+
+#search {
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: 1px solid #1b9dff;
+    background-color: #020817;
+    color: #ffffff;
+    font-size: 11px;
+    width: 180px;
+}
+
+.navbtn {
+    padding: 5px 10px;
+    margin-left: 6px;
+    border-radius: 12px;
+    border: 1px solid #1b9dff;
+    background-color: transparent;
+    color: #1b9dff;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.navbtn-blue {
+    background-color: #1b9dff;
+    color: #020817;
+    font-weight: bold;
+}
+
+.navbtn:hover {
+    background-color: yellow;
+}
+
+/* HERO */
+
+#hero {
+    padding: 30px 40px 25px 40px;
+    background-color: #021633;
+    border-bottom: 1px solid #123a74;
+}
+
+/* left */
+
+#hero-left {
+    float: left;
+    width: 55%;
+}
+
+.welcome-label {
+    font-size: 12px;
+    color: #9bb4ff;
+    margin: 0 0 4px 0;
+}
+
+#hero-left h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #36c3ff;
+}
+
+.hero-text {
+    font-size: 14px;
+    color: #b8c9ff;
+    margin-bottom: 14px;
+    max-width: 430px;
+}
+
+/* hero buttons */
+
+.btn-main,
+.btn-alt {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 8px;
+    margin-top: 6px;
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 18px;
+    border: 1px solid #1b9dff;
+}
+
+.btn-main {
+    background-color: #1b9dff;
+    color: #020817;
+    font-weight: bold;
+}
+
+.btn-main:hover {
+    background-color: #0f6fd6;
+}
+
+.btn-alt {
+    background-color: transparent;
+    color: #1b9dff;
+}
+
+.btn-alt:hover {
+    background-color: #031a33;
+}
+
+.btn-small {
+    padding: 6px 10px;
+    font-size: 10px;
+}
+
+/* hero tags */
+
+#hero-tags {
+    margin-top: 12px;
+}
+
+#hero-tags span {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 3px 4px 0 0;
+    font-size: 10px;
+    border-radius: 12px;
+    border: 1px solid #1b9dff;
+    color: #9bb4ff;
+}
+
+/* right */
+
+#hero-right {
+    float: right;
+    width: 40%;
+}
+
+#featured-box {
+    background-color: #041a3d;
+    border-radius: 14px;
+    border: 1px solid #1b9dff;
+    padding: 14px;
+    color: #b8c9ff;
+}
+
+#featured-box h3 {
+    margin: 0 0 6px 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+#featured-box p {
+    font-size: 12px;
+    margin: 0 0 8px 0;
+}
+
+/* stats */
+
+#featured-stats {
+    margin-top: 10px;
+}
+
+#featured-stats div {
+    display: inline-block;
+    width: 30%;
+    font-size: 10px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 14px;
+    color: #36c3ff;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: #9bb4ff;
+}
+
+/* SECTIONS */
+
+.section-title {
+    font-size: 18px;
+    color: #36c3ff;
+    margin: 25px 40px 4px 40px;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    font-size: 12px;
+    color: #9bb4ff;
+    margin: 0 40px 14px 40px;
+}
+
+.highlight {
+    color: #36c3ff;
+}
+
+/* CARDS (GAMES & CONSOLES) */
+
+#games,
+#consoles {
+    padding: 0 40px 25px 40px;
+    background-color: #020817;
+}
+
+.game-card {
+    display: inline-block;
+    width: 22%;
+    min-width: 210px;
+    margin: 8px 1% 18px 0;
+    padding: 10px;
+    background-color: #04152c;
+    border: 1px solid #123a74;
+    border-radius: 12px;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+.game-card img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    background-color: #020817;
+}
+
+.game-card h3 {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.game-info {
+    font-size: 10px;
+    color: #36c3ff;
+    text-transform: uppercase;
+}
+
+.game-desc {
+    font-size: 11px;
+    color: #9bb4ff;
+    margin: 4px 0;
+}
+
+.game-price {
+    font-size: 13px;
+    color: #36c3ff;
+    font-weight: bold;
+    margin: 4px 0 6px 0;
+}
+
+/* DEALS */
+
+#deals {
+    padding: 15px 40px 20px 40px;
+    background-color: #021633;
+    border-top: 1px solid #123a74;
+    border-bottom: 1px solid #123a74;
+}
+
+/* CONTACT */
+
+#contact {
+    padding: 20px 40px 30px 40px;
+    background-color: #020817;
+}
+
+#contact-left {
+    float: left;
+    width: 48%;
+}
+
+#contact-right {
+    float: right;
+    width: 45%;
+    color: #9bb4ff;
+    font-size: 12px;
+}
+
+#contact-form {
+    background-color: #04152c;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #123a74;
+}
+
+#contact-form label {
+    font-size: 11px;
+    color: #36c3ff;
+    display: block;
+    margin-top: 6px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 96%;
+    padding: 6px;
+    margin-top: 3px;
+    border-radius: 4px;
+    border: 1px solid #123a74;
+    background-color: #020817;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+#contact-form button {
+    margin-top: 10px;
+}
+
+#contact-right h3 {
+    margin-top: 0;
+    color: #36c3ff;
+    font-size: 15px;
+}
+
+#contact-right ul {
+    padding-left: 18px;
+}
+
+.note {
+    font-size: 10px;
+    color: #6e82b8;
+}
+
+#contact .clear {
+    clear: both;
+}
+
+/* FOOTER */
+
+#footer {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 10px;
+    color: #6e82b8;
+    border-top: 1px solid #123a74;
+    background-color: #010814;
+}
     </style>
   <header id="top-bar">
         <div id="logo">
