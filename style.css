@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    padding: 0;
+    padding:  40px 40px 40px 10px;
     background-color: #020817;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #top-bar {
@@ -84,7 +85,7 @@ body {
 
 
 
-#hero {
+#h {
     padding: 30px 40px 25px 40px;
     background-color: #021633;
     border-bottom: 1px solid #123a74;
@@ -175,8 +176,12 @@ body {
     background-color: #041a3d;
     border-radius: 14px;
     border: 1px solid #1b9dff;
-    padding: 14px;
+    padding: 10px;
     color: #b8c9ff;
+    position: absolute;
+    right: 40px;
+    top: 150px; /* Adjust based on your header height */
+    width: 300px;
 }
 
 #featured-box h3 {
@@ -414,4 +419,10 @@ button {
 
 button:hover {
     background-color: #0f6fd6;   
+}
+footer{
+    text-align: center;
+    background-color: #031a33;
+    height: 100px;
+    padding: 20px;
 }
