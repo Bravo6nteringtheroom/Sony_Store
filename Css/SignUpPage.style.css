@@ -1,0 +1,28 @@
+body{
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Sign_title{
+    text-align: center;
+}
+
+#SignUpForm{
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    gap: 10px;
+    padding: 10px;
+}
+
+#Sign_Up_btn{
+    margin-top: 50px;
+}
+
+#F_L{
+    margin-bottom: 20px;
+}

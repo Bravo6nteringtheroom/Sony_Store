@@ -1,18 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAR BYTE</title>
-    <link rel="stylesheet" href="../Sony_Store/Css/style.css">
+    <title>Example</title>
 </head>
 <body>
-    <header>
+    <header id="top-bar">
         <div id="logo">
-            <img src = "star.png" class = "logo-star">
-            <span class="logo-main">Star</span>
-            <span class="logo-blue">Byte</span>
+            <span class="logo-main">NEXUS</span>
+            <span class="logo-blue">BLUE</span>
+            <span class="logo-main">GAMES</span>
         </div>
 
         <div id="main-nav">
@@ -31,11 +29,11 @@
         <div class="clear"></div>
     </header>
 
-    
     <section id="hero">
         
         <div id="hero-left">
-            <h1>WELCOME TO STAR BYTE</h1>
+            <p class="welcome-label">WELCOME TO</p>
+            <h1>OUR SITE</h1>
             <p class="hero-text">
                 Explore a curated collection of legendary titles, next-gen consoles, and
                 limited-edition bundles in a neon-blue cyber universe.
@@ -48,112 +46,89 @@
                 <span>PC</span>
                 <span>PlayStation 4</span>
                 <span>PlayStation 5</span>
+                <span>Xbox</span>
+                <span>Nintendo</span>
             </div>
         </div>
 
-        <div id="hero-right">
-            <div id="featured-box">
-                <h3>Featured Drop</h3>
-                <p>Exclusive Collector's Edition • PS5 • Steelbook + Digital Deluxe</p>
-                <a href="#deals" class="btn-alt btn-small">VIEW OFFER</a>
-
-                <div id="featured-stats">
-                    <div>
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Top Games</span>
-                    </div>
-                    <div>
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Support</span>
-                    </div>
-                    <div>
-                        <span class="stat-number">Ultra</span>
-                        <span class="stat-label">Fast Delivery</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="clear"></div>
     </section>
 
+    <!-- TRENDING GAMES -->
     <section id="games">
         <h2 class="section-title">TRENDING GAMES</h2>
         <p class="section-subtitle">Hand-picked bestsellers and iconic titles for all platforms.</p>
 
         <div class="game-card">
-            <img src="spiderman.jpg" alt="Cover art of a futuristic action game">
-            <h3>Spiderman 2</h3>
+            <img src="images/game1.jpg" alt="Cover art of a futuristic action game">
+            <h3>Cyber Horizon</h3>
             <p class="game-info">PS5 • Action • Sci-Fi</p>
-            <p class="game-desc">Open world superhero advanture.</p>
+            <p class="game-desc">Futuristic open-world adventure with neon cities.</p>
             <p class="game-price">$59.99</p>
-            <button class = "details-btn">Add to Cart</button>
+            <a href="#" class="btn-main btn-small">Add to Cart</a>
         </div>
 
         <div class="game-card">
-            <img src="blackops.png" alt="Cover art of a space shooter game">
-            <h3>Call of Duty: Black Ops 7</h3>
-            <p class="game-info">PS5 • PC • Shooter</p>
-            <p class="game-desc"> A new era of Black Ops warfare featuring high-tech weapons,
-        intense missions, and next-gen graphics.</p>
+            <img src="images/game2.jpg" alt="Cover art of a space shooter game">
+            <h3>Voidstrike</h3>
+            <p class="game-info">PC • Shooter</p>
+            <p class="game-desc">Zero-gravity battles and energy weapons.</p>
             <p class="game-price">$49.99</p>
-            <button class = "details-btn">Add to Cart</button>
+            <a href="#" class="btn-main btn-small">Add to Cart</a>
         </div>
 
         <div class="game-card">
-            <img src="eldenring.png" alt="Cover art of a fantasy RPG">
-            <h3>Elden Ring</h3>
-            <p class="game-info">PS5 • PS4 • RPG</p>
-            <p class="game-desc"> Open-world dark fantasy adventure created by FromSoftware and George R. R. Martin.</p>
+            <img src="images/game3.jpg" alt="Cover art of a fantasy RPG">
+            <h3>Eclipse Realms</h3>
+            <p class="game-info">PS4 • RPG</p>
+            <p class="game-desc">Sci-fi meets fantasy in a story-rich world.</p>
             <p class="game-price">$39.99</p>
-            <button class = "details-btn">Add to Cart</button>
+            <a href="#" class="btn-main btn-small">Add to Cart</a>
         </div>
 
         <div class="game-card">
-            <img src="rdr2.png" alt="Cover art of a racing game">
-            <h3>Read Dead Redemption 2</h3>
-            <p class="game-info">PS5 • PC • Action</p>
-            <p class="game-desc">An open-world epic following the Van der Linde gang in the final days of the Wild West.</p>
-            <p class="game-price">$39.99</p>
-           <button class = "details-btn">Add to Cart</button>
+            <img src="images/game4.jpg" alt="Cover art of a racing game">
+            <h3>Neon Velocity</h3>
+            <p class="game-info">Xbox • Racing</p>
+            <p class="game-desc">High-speed hover racing in cyber streets.</p>
+            <p class="game-price">$29.99</p>
+            <a href="#" class="btn-main btn-small">Add to Cart</a>
         </div>
 
         <div class="clear"></div>
     </section>
-
     <section id="consoles">
         <h2 class="section-title">CONSOLES & BUNDLES</h2>
         <p class="section-subtitle">Choose your machine. Power up your universe.</p>
 
         <div class="game-card">
-            <img src="ps5-big.png" alt = "PlayStation 5 console">
+            <img src="images/ps5.jpg" alt="PlayStation 5 console">
             <h3>PlayStation 5</h3>
             <p class="game-desc">Next-gen 4K gaming with ultra-fast SSD.</p>
             <p class="game-price">$499.99</p>
-            <button class="details-btn">Add to Cart</button>
+            <a href="#" class="btn-alt btn-small">View Details</a>
         </div>
 
         <div class="game-card">
-            <img src="ps4-big.png" alt="PlayStation 4 console">
+            <img src="images/ps4.jpg" alt="PlayStation 4 console">
             <h3>PlayStation 4</h3>
             <p class="game-desc">Legendary library at an affordable price.</p>
             <p class="game-price">$299.99</p>
-            <button class = "details-btn">Add to Cart</button>
+            <a href="#" class="btn-alt btn-small">View Details</a>
         </div>
 
         <div class="game-card">
-            <img src="fortnite.png" alt="PS5 bundle with game disc">
-            <h3>PS5 Fortnite Bundle</h3>
-            <p class="game-info">PS5 • Digital Edition</p>
-            <p class="game-desc"> Includes Fortnite cosmetics, V-Bucks, and the exclusive Coldest Circles set.</p>
-            <p class="game-price">$499.99</p>
-            <button class = "details-btn">Add to Cart</button>
+            <img src="images/bundle.jpg" alt="PS5 bundle with game disc">
+            <h3>PS5 Sci-Fi Bundle</h3>
+            <p class="game-desc">PS5 + sci-fi game CD + bonus items.</p>
+            <p class="game-price">$569.99</p>
+            <a href="#" class="btn-main btn-small">Add to Cart</a>
         </div>
 
         <div class="clear"></div>
     </section>
 
-   
     <section id="deals">
         <h2 class="section-title">NIGHTFALL DEALS</h2>
         <p class="section-subtitle">
@@ -161,7 +136,6 @@
         </p>
     </section>
 
-   
     <section id="contact">
         <h2 class="section-title">CONTACT & SUPPORT</h2>
 
@@ -181,20 +155,22 @@
         </div>
 
         <div id="contact-right">
-            <h3>Why Star Byte?</h3>
+            <h3>Why Nexus Blue Games?</h3>
             <ul>
                 <li>Physical game CDs & authentic consoles.</li>
-                <li>Whatever you need in this site</li>
-                <li>youll never be upset!!</li>
+                <li>Organized sci-fi themed interface.</li>
+                <li>Easy to extend with backend (PHP/MySQL).</li>
+                <li>Designed using basic HTML & CSS from the course.</li>
             </ul>
+            <p class="note">*This website is a student project for Web Programming.</p>
         </div>
 
         <div class="clear"></div>
     </section>
-    <footer  >
-        <p>&copy; 2025 Star Byte. All rights reserved.</p>
-        <p>Contact number: 961/81-991-300</p>
-    </footer>
 
+    <footer id="footer">
+        <p> StarByte&copy2025;. All rights reserved.</p>
+        <p> contact on number: 81-991-300</p>
+    </footer>
 </body>
 </html>
