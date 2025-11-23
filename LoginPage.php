@@ -33,6 +33,6 @@
             }
         }
     }else{
-        echo "an error has occured";
+        echo "";
     }
 ?>

@@ -25,8 +25,8 @@
 
         <div id="nav-actions">
             <input type="text" id="search" placeholder="Search games, consoles, genres">
-            <button class="navbtn">LOGIN</button>
-            <button class="navbtn navbtn-blue">SIGN UP</button>
+            <button class="navbtn" id="LOGIN_BTN">LOGIN</button>
+            <button class="navbtn navbtn-blue" id="SignUp_btn">SIGN UP</button>
         </div>
         <div class="clear"></div>
     </header>
@@ -83,38 +83,38 @@
 
         <div class="game-card">
             <img src="spiderman.jpg" alt="Cover art of a futuristic action game">
-            <h3>Spiderman 2</h3>
+            <h3 id="Spiderman_2">Spiderman 2</h3>
             <p class="game-info">PS5 • Action • Sci-Fi</p>
             <p class="game-desc">Open world superhero advanture.</p>
-            <p class="game-price">$59.99</p>
+            <p class="game-price" id="Open_world_superhero_advanture_Price">$59.99</p>
             <button class = "details-btn">Add to Cart</button>
         </div>
 
         <div class="game-card">
             <img src="blackops.png" alt="Cover art of a space shooter game">
-            <h3>Call of Duty: Black Ops 7</h3>
+            <h3 id="Call_of_Duty_Black_Ops_7">Call of Duty: Black Ops 7</h3>
             <p class="game-info">PS5 • PC • Shooter</p>
             <p class="game-desc"> A new era of Black Ops warfare featuring high-tech weapons,
         intense missions, and next-gen graphics.</p>
-            <p class="game-price">$49.99</p>
+            <p class="game-price" id="COD_Price">$49.99</p>
             <button class = "details-btn">Add to Cart</button>
         </div>
 
         <div class="game-card">
             <img src="eldenring.png" alt="Cover art of a fantasy RPG">
-            <h3>Elden Ring</h3>
+            <h3 id="Elden_Ring">Elden Ring</h3>
             <p class="game-info">PS5 • PS4 • RPG</p>
             <p class="game-desc"> Open-world dark fantasy adventure created by FromSoftware and George R. R. Martin.</p>
-            <p class="game-price">$39.99</p>
+            <p class="game-price" id="eldenring_Price">$39.99</p>
             <button class = "details-btn">Add to Cart</button>
         </div>
 
         <div class="game-card">
             <img src="rdr2.png" alt="Cover art of a racing game">
-            <h3>Read Dead Redemption 2</h3>
+            <h3 id="Read_Dead_Redemption_2">Read Dead Redemption 2</h3>
             <p class="game-info">PS5 • PC • Action</p>
             <p class="game-desc">An open-world epic following the Van der Linde gang in the final days of the Wild West.</p>
-            <p class="game-price">$39.99</p>
+            <p class="game-price" id="RDR_2_Price">$39.99</p>
            <button class = "details-btn">Add to Cart</button>
         </div>
 
@@ -127,26 +127,26 @@
 
         <div class="game-card">
             <img src="ps5-big.png" alt = "PlayStation 5 console">
-            <h3>PlayStation 5</h3>
+            <h3 id="PS5">PlayStation 5</h3>
             <p class="game-desc">Next-gen 4K gaming with ultra-fast SSD.</p>
-            <p class="game-price">$499.99</p>
+            <p class="game-price" id="PS5_Price">$499.99</p>
             <button class="details-btn">Add to Cart</button>
         </div>
 
         <div class="game-card">
             <img src="ps4-big.png" alt="PlayStation 4 console">
-            <h3>PlayStation 4</h3>
+            <h3 id="PS4">PlayStation 4</h3>
             <p class="game-desc">Legendary library at an affordable price.</p>
-            <p class="game-price">$299.99</p>
+            <p class="game-price" id="PS4_Price">$299.99</p>
             <button class = "details-btn">Add to Cart</button>
         </div>
 
         <div class="game-card">
             <img src="fortnite.png" alt="PS5 bundle with game disc">
-            <h3>PS5 Fortnite Bundle</h3>
+            <h3 id="PS5_Fortnite_Bundle">PS5 Fortnite Bundle</h3>
             <p class="game-info">PS5 • Digital Edition</p>
             <p class="game-desc"> Includes Fortnite cosmetics, V-Bucks, and the exclusive Coldest Circles set.</p>
-            <p class="game-price">$499.99</p>
+            <p class="game-price" id="PS5_Fortnite_Bundle_Price">$499.99</p>
             <button class = "details-btn">Add to Cart</button>
         </div>
 
@@ -175,7 +175,7 @@
 
                 <label for="message">Message</label>
                 <textarea id="message" rows="4" placeholder="How can we help?" required></textarea>
-
+                <span id="Error_Message"></span>
                 <button type="submit" class="btn-main">SEND MESSAGE</button>
             </form>
         </div>
@@ -195,6 +195,6 @@
         <p>&copy; 2025 Star Byte. All rights reserved.</p>
         <p>Contact number: 961/81-991-300</p>
     </footer>
-
+    <script src="HomePage.js"></script>
 </body>
 </html>
