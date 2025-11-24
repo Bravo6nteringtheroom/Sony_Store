@@ -41,7 +41,7 @@
         $Balance = $_POST["Balance"];
 
         if($Password === $Password_Confirm){
-            echo"These 2 strings are equal";
+            $Confirm = true;
         }
     $Confirm = true;
     if(str_contains($Email,'@gmail.com')){
@@ -62,8 +62,10 @@
 
     if($Confirm){
         $sql = "insert into user_account (First_name,Last_Name,Email,Password,Balance) values ('$First_name','$Last_name','$Email','$Password','$Balance')";
+        $target_url = "http://localhost/xampp/Sony_Store/index.html?";
         if($connect->query($sql) === true){
             echo "Data inserted";
+            header('Location: ' . $target_url);
         }else{
             echo "Error occurred" . $connect->error;
         }

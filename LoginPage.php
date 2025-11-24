@@ -23,12 +23,15 @@
         $Username = $_POST["Email"];
         $Password = $_POST["Password"];
 
+        $target_url = "http://localhost/xampp/Sony_Store/index.html?";
         //WTF
-        $sql = "select Email , Password From user where Email = '$Username' ";
+        $sql = "select Email , Password From user_account where Email = '$Username' ";
         $Compare = $connect->query($sql);
         if($Compare->num_rows > 0){
             while($row = $Compare->fetch_assoc()){
-                if($Password == $row["Password"]) echo "You logged in successfully";
+                if($Password == $row["Password"]){
+                    header('Location: ' . $target_url);
+                }
                 else { echo "Wrong Email or password"; }
             }
         }

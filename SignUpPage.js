@@ -53,3 +53,4 @@ document.getElementById("SignUpForm").addEventListener('submit' , (event) =>{
         event.target.submit()
     }
 })
+
