@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="Css/SignUpPage.style.css">
-</head>
-<body>
-    <form action="" method="POST">
-
-    </form>
-</body>
-</html>
-=======
     <link rel="stylesheet" href="../Sony_Store/Css/SignUpPage.style.css">
 </head>
 <body>
@@ -70,4 +60,3 @@
         echo"Please fill in the following stuff:";
     }
 ?>
->>>>>>> 0ce0d390df558468433fed2baaf6bf26722ce514
