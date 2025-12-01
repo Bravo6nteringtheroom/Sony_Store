@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../Sony_Store/Css/SignUpPage.style.css">
-=======
-    <link rel="stylesheet" href="Css/SignUpPage.style.css">
->>>>>>> a059db80c94711dc00ea5c8a914567e634e4797d
-</head>
-<body>
-    <form action="SignUpPage.php" method="POST" id="SignUpForm">
-        <h2 id="Sign_title">Sign Up</h2>
-        <div id="F_L">
-            <input type="text" name="First_name" placeholder="First_name" id="First_name">
-            <span id="First_name_Error"></span>
-            <input type="text" name="Last_name" placeholder="Last_name" id="Last_name">
-            <span id="Last_name_Error"></span>
-        </div>
-        <input type="email" name="new_Email" placeholder="Email" id="Email">
-        <span id="Email_Error"></span>
-        <input type="password" name="new_Password" placeholder="Password" id="Password">
-        <span id="Password_Error"></span>
-        <input type="password" name="confirm_Password" placeholder="Confirm Password" id="Password_Confirm">
-        <span id="Password_Confirm_Error"></span>
-        <input type="text" name="Balance" id="Balance">
-        <button id="Sign_Up_btn">Sign Up</button>
-    </form>
-
-    <script src="SignUpPage.js"></script>
-</body>
-</html>
-
 <?php
     include "./dbconnect.php";
     
@@ -65,11 +30,10 @@
     }
 
     if($Confirm){
-        $sql = "insert into user_account (First_name,Last_Name,Email,Password,Balance) values ('$First_name','$Last_name','$Email','$Password','$Balance')";
-        $target_url = "http://localhost/xampp/Sony_Store/index.html?";
+        $sql = "insert into user_account (First_name,Last_name,Email,Password,Balance) values ('$First_name','$Last_name','$Email','$Password','$Balance')";
         if($connect->query($sql) === true){
             echo "Data inserted";
-            header('Location: ' . $target_url);
+            header('Location: ' . 'index.html');
         }else{
             echo "Error occurred" . $connect->error;
         }

@@ -3,11 +3,12 @@ let Login_btn = document.getElementById("LOGIN_BTN")
 let SignUp_btn = document.getElementById("SignUp_btn")
 
 Login_btn.addEventListener('click' , () => {
-    window.location.href = "LoginPage.php"
+    console.log("Login button pressed")
+    window.location.href = "LoginPage.html"
 })
 
 SignUp_btn.addEventListener('click' , () => {
-    window.location.href = "SignUpPage.php"
+    window.location.href = "SignUpPage.html"
 })
 
 let Contact_Form = document.getElementById("contact-form")
